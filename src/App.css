@@ -1,38 +1,109 @@
-.App {
+
+
+.container{
+  min-height: 100vh;
+}
+.quiz{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.question{
+  min-width: 600px;
+}
+
+
+.quiz .question-title{
+  margin-bottom: 3rem;
+}
+
+.quiz .question-title p{
+  font-size: 3rem;
+  text-transform: capitalize;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quiz .question-form{
+  text-align: center;
+}
+.quiz .question-form input{
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px dashed #000;
+  background-color: transparent;
+}
+.quiz .question-form input.incorrect{
+
+  color: red;
+  border-bottom: 2px dashed red;
+
+}
+.quiz .question-form input.correct{
+
+  color: green;
+  border-bottom: 2px dashed green;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quiz .question-form input:focus{
+  outline: none;
+}
+.btn-container{
+  text-align: end;
+}
+.btn{
+  padding: .5rem 1.5rem;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: transparent;
+  color: purple;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.btn:hover{
+  color: #fff;
+  background-color: purple;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result-container{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 70%;
+  background-color: rgba(255,0,0,.2);
+  height: 8rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.result-container.correct{
+
+  background-color: rgba(255,0,0,.2);
+
+}
+.result-container div{
+  flex: 1;
+}
+.result-container p{
+  font-size: 1.3rem;
+  color: #000;
+}
+.result-container p span{
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.contador{
+  position: absolute;
+  top: 3rem ;
+  right: 30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contador span{
+  font-size: 3rem;
 }

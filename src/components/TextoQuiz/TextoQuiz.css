@@ -1,0 +1,13 @@
+.text-container p{
+    font-size: 20px;
+}
+.text-container p input{
+    font-size: inherit;
+    padding: .2rem .5rem;
+    border: 0;
+    border-bottom: 1px solid red ;
+    max-width: 150px;
+}
+.text-container p input:focus{
+    outline: none;
+}

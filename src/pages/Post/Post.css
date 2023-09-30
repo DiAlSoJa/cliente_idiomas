@@ -1,0 +1,38 @@
+.post{
+    padding: 2rem;
+}
+.exam-cartel{
+    background-color: rgba(128, 0, 128, 0.445);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 3px solid purple;
+}
+
+.exam-cartel h2{
+    color: #000;
+}
+.exam-cartel div{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exam-cartel div p{
+    font-weight: bold;
+}
+.exam-cartel div .btn{
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width:500px) {
+    .exam-cartel h2{
+        text-align: center;
+    }
+    .exam-cartel div p{
+        text-align: center;
+    }
+    .exam-cartel div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
